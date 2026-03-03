@@ -13,7 +13,8 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script>
         function App() {
-            const time = new Date().toLocaleTimeString();
+            // const time = new Date().toLocaleTimeString();
+            const [time, setTime] = React.useState(new Date().toLocaleTimeString());
             return React.createElement("header", null, `Hello REACT! It's ${time}`);
         }
         const root = ReactDOM.createRoot(document.getElementById('root'))
